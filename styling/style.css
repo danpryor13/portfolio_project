@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font-Family: 'Roboto Condensed', Sans-Serif;
+Font-Size: 35px;
+Font-Family: 'Cabin', Sans-Serif;
+Font-Size: 16px; */
+
+body {
+    background-color: rgba(0, 0, 0, 0.925);
+    color: whitesmoke;
+    display: flex;
+    font-size: 16px;
+    Font-Family: 'Cabin', Sans-Serif;
+    opacity: .9;
+    
+}
+
+/* Header */
+
+header {
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.name {
+    font-size: 24px;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    letter-spacing: 1.8px;
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+    
+}
+
+nav li {
+    margin-right: 30px;
+    text-align: center;
+}
+
+.menu-btn .nav-menu {
+    display: inline-flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s, opacity 0.5s ease-in-out;
+}
+
+/* menu button */
+
+
+.menu-btn {
+    display: inline-flex;
+}
+
+.menu-btn__style {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+   
+    
+}
+
+.menu-btn__burger {
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    border-radius: 2.5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before, 
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    border-radius: 2.5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-8px);
+}
+.menu-btn__burger::after {
+    transform: translateY(8px);
+}
+
+/* ANIMMATION */
+
+.menu-btn.open .menu-btn__burger {
+    transform:translateX(-25px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .nav-menu {
+    visibility: visible;
+    opacity: 1;
+}
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(17.5px, -17.5px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(17.5px, 17.5px);
+}
+
