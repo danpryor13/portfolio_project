@@ -67,6 +67,12 @@ nav a {
     transition: all 1s, opacity 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 680px) {
+    header {
+        margin-top: 20px;
+    }
+  }
+
 /* menu button */
 
 
@@ -173,8 +179,19 @@ main {
     font-size: 20px;
     Font-Family: 'Ruda', Sans-Serif;
 }
-@media only screen and (max-width: 850px) {
-    .subtitle {
-      
+@media only screen and (max-width: 680px) {
+    .title {
+        top: 28%;
+        left: 2%;
+        font-size: 35px;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .title, .subtitle {
+        left: 15%;
+        top: 2%;
+       
+    }
+  }
+    
