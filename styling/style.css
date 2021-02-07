@@ -175,7 +175,7 @@ nav a {
     width: fit-content;
     height: fit-content;
     max-height: 25px;
-    top: 25%;
+    top: 31%;
     left: 15%;
     z-index: 9;
     text-align: center;
@@ -183,24 +183,41 @@ nav a {
     Font-Family: 'Ruda', Sans-Serif;
 }
 
-  @media only screen and (max-width: 516px) {
-    .title, .subtitle {
-        left: 15%;
-        top: 5%;
-    }
-    .title {
-        font-size: 35px;
-    }
+ 
+
+
+  @media only screen and (max-width: 1200px) {
     .subtitle {
-        left: 26%;
+        
+        top: 28%;
     }
-    .banner {
-        margin-top: 50px;
-    }
-    header {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-  
   }
-    
+  
+    @media only screen and (max-width: 850px) {
+        .subtitle {
+
+            top: 26%;
+        }  
+    }    
+
+    @media only screen and (max-width: 516px) {
+        .title, .subtitle {
+            left: 15%;
+            top: 5%;
+        }
+        .title {
+            font-size: 35px;
+        }
+        .subtitle {
+            left: 26%;
+            top:5%
+        }
+        .banner {
+            margin-top: 50px;
+        }
+        header {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+      
+      }
