@@ -9,6 +9,7 @@ Font-Size: 35px;
 Font-Family: 'Cabin', Sans-Serif;
 Font-Size: 16px; */
 
+
 body {
     background-color: #141414;
     color: whitesmoke;
@@ -49,7 +50,7 @@ section {
 header {
     width: 90%;
     margin: auto;
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -238,9 +239,8 @@ nav li {
     
 }
 
- {
+
     
-}
 
 #more {
     display: inline;
@@ -254,6 +254,45 @@ nav li {
 #dots {
     visibility: hidden;
 }
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    width: 80%;
+}
+
+.contact p {
+    padding: 20px 0px;
+}
+
+.contact img {
+    height: 40px;
+    width: 40px;
+}
+
+hr {
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* footer */
+
+footer {
+    margin: 20px auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+    text-align: left;
+}
+
+
 
 /* menu button */
 
@@ -373,7 +412,8 @@ nav li {
         margin-top: 50px;
     }
     header {
-        margin-top: 20px;
+        padding-top: 20px;
+        margin-top: 0px;
         margin-left: 20px;
     }
       
