@@ -261,7 +261,8 @@ nav li {
     text-align: center;
     width: 80%;
     margin-bottom: 200px;
-    padding-top: 150px;
+    margin-top: 0px;
+    padding-top: 130px;
 }
 
 .contact p {
@@ -459,7 +460,8 @@ footer img {
     
     #more {
         display: none;} 
-
+    
+    
         
     }
 
