@@ -460,7 +460,10 @@ footer img {
     
     #more {
         display: none;} 
-
+    
+    .contact {
+        margin-top: 0px;
+    }
         
     }
 
