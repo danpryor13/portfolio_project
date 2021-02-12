@@ -260,6 +260,9 @@ nav li {
 .contact {
     text-align: center;
     width: 80%;
+    margin-top: 170px;
+    margin-bottom: 200px;
+    padding-top: 15px;
 }
 
 .contact p {
